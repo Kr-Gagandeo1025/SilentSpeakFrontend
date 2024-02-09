@@ -1,0 +1,63 @@
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+@font-face {
+    font-family: rj;
+    src: url(./Rejouice-Headline.ttf);
+}
+*{
+    font-family: rj;
+    font-weight: 700;
+}
+.container{
+    margin:0;
+    padding: 0px;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: url('../../public/hero-img.png');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+}
+.hero-title{
+    margin: 0px;
+    padding:10px;
+    h1{
+        text-align: center;
+        margin: 0px auto;
+        padding: 0px;
+        font-size: 12vw;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+        letter-spacing: 3px;
+    
+    }
+}
+.hero-para{
+    margin: 0px;
+    padding:10px;
+    p{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+.hero-btn{
+    margin: 0px;
+    padding:10px;
+    button{
+        padding:15px;
+        font-size: 18px;
+        background-color: transparent;
+        outline: 0.5px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        color: white;
+        border:none;
+        font-weight: 900;
+    }
+}

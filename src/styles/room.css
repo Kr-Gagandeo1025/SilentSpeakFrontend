@@ -1,0 +1,97 @@
+.room-main{
+    margin: 0px;
+    padding:0px;
+    height: fit-content;
+    background-color: rgb(207,207,207);
+}
+
+.room-title{
+    margin: 0;
+    padding:5px;
+    font-size: 30px;
+}
+.connect-status{
+    padding-left:5px;
+    color: rgb(64, 180, 64);
+}
+.display-section{
+    display: flex;
+    /* height: 100vh; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.call-btn,.exit-btn,.start-stream-btn{
+    padding:10px;
+    border-radius: 20px;
+    outline: none;
+    border:1px solid black;
+    width:300px;
+    transition: ease-in-out 0.25s;
+}
+.exit-btn:hover{
+    background-color: rgb(199, 119, 119);
+    color:white;
+    font-weight: 400;
+}
+.call-icon{
+    margin:10px;
+}
+.call-btn:hover{
+    background-color: rgb(157, 200, 157);
+    color:white;
+    font-weight: 400;
+}
+.start-stream-btn{
+    width: fit-content;
+    margin-bottom: 100px;
+}
+.start-stream-btn:hover{
+    background-color: rgb(157, 200, 157);
+    color:white;
+    font-weight: 400;
+}
+.remote-video{
+    height: 150px;
+    width: 300px;
+    h1{
+        font-size: 18px;
+        margin-right: 50px;
+    }
+}
+.my-video{
+    width: 90vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: right;
+}
+.host-video-main{
+    width:60%;
+}
+.remote-video-main{
+    height: fit-content;
+}
+.host-video{
+    height: 100%;
+    width:100%;
+    border-radius: 20px;
+    h1{
+        font-size: 18px;
+        margin-right: 100px;
+    }
+}
+.remote-silentSpeaker{
+    margin-top: 50px;
+    text-align: left;
+    margin-left:50px;
+    h4{
+        border-bottom: 1px solid black;
+    }
+    p{
+        padding: 20px;
+        background-color: rgb(250, 236, 236);
+        border-radius: 20px;
+    }
+}
