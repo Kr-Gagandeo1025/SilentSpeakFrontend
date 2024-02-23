@@ -3,7 +3,6 @@ import React, {useCallback, useState, useEffect } from 'react'
 import '../styles/main-sec.css'
 import { useSocket } from '../providers/socket'
 import { useNavigate } from "react-router-dom";
-
 const Home = () => {
     const [email,setEmail] = useState("");
     const [roomName,setRoomName] = useState("");
@@ -42,9 +41,9 @@ const Home = () => {
                   <input type='text' className='room-name input-field' placeholder='Enter a Room ID...' value={roomName} onChange={(e)=>setRoomName(e.target.value)}/>
                   <button className='rm-btn create-btn' type="submit">create / join room</button>
               </div>
-              {/* <div className="cr-jn-img">
-
-              </div> */}
+              <div className="cr-jn-img">
+                <img src="../../public/sgn-lng-boy.webp" alt="boi" />
+              </div>
           </div>
           </div>
         </form>

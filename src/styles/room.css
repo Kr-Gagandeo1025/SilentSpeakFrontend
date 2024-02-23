@@ -1,7 +1,7 @@
 .room-main{
     margin: 0px;
     padding:0px;
-    height: fit-content;
+    min-height: 100vh;
     background-color: rgb(207,207,207);
 }
 
@@ -89,9 +89,41 @@
     h4{
         border-bottom: 1px solid black;
     }
-    p{
-        padding: 20px;
-        background-color: rgb(250, 236, 236);
-        border-radius: 20px;
+    .silent-div{
+        display: flex;
+        flex-direction: column;
     }
+    .silent-text{
+        padding: 10px;
+        outline: none;
+        border-radius: 20px;
+        border: 1px solid black;
+        height: 20px;
+        width: 100%;
+        background-color: rgba(131, 190, 227, 0.74);
+    }
+    .silent-send-btn{
+        align-self: flex-end;
+        transform: translateY(-35px);
+        background-color: transparent;
+        outline:none;
+        border:1px solid black;
+        border-radius:20px;
+        padding: 5px;
+    }
+    .silent-msg-box{
+        padding: 10px;
+        outline: none;
+        border-radius: 20px;
+        border: 1px solid black;
+        height: 100px;
+        width: 100%;
+        background-color: rgba(131, 190, 227, 0.74);
+    }
+}
+.action-btns{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: fit-content;
 }
