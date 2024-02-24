@@ -21,7 +21,7 @@
     width: 100%;
     background: url('../../public/hero-img.png');
     object-fit: cover;
-    background-repeat: no-repeat;
+    background-repeat:repeat;
     color: rgb(0, 0, 0);
 }
 .hero-title{

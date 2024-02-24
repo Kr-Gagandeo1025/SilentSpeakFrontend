@@ -181,7 +181,7 @@ const Room = () => {
                         myStream && <div className="host-video">
                             <h1>Your Video</h1>
                             { silentSpeakMode && <Signdetector setSilentText={setSilentText}/>}
-                            { !silentSpeakMode && <ReactPlayer playing muted={mute} url={myStream} height={480} width={640}/>}
+                            { !silentSpeakMode && <ReactPlayer playing muted url={myStream} height={480} width={640}/>}
                         </div>
                     }
                 </div>

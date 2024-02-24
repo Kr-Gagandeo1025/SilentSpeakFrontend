@@ -12,7 +12,7 @@ const Hero = () => {
             <h1>Welcome to<br/>Silent Speak.</h1>
         </div>
         <div className="hero-para">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo natus architecto voluptatem dolorem soluta aut.</p>
+            <p>bridging the communication gap</p>
         </div>
         <div className="hero-btn">
             <a href="#session"><button>Get Started</button></a>

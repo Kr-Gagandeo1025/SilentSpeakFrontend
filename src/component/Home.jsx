@@ -3,6 +3,8 @@ import React, {useCallback, useState, useEffect } from 'react'
 import '../styles/main-sec.css'
 import { useSocket } from '../providers/socket'
 import { useNavigate } from "react-router-dom";
+import boy from '../boy.jpg';
+import { GitHub } from "@mui/icons-material";
 const Home = () => {
     const [email,setEmail] = useState("");
     const [roomName,setRoomName] = useState("");
@@ -18,7 +20,7 @@ const Home = () => {
       const {email, roomName} = data;
       console.log(email,roomName);
       navigate(`/room/${roomName}`);
-    },[])
+    },[navigate])
 
     useEffect(()=>{
       socket.on('join-room',handleRoomJoin);
@@ -42,11 +44,19 @@ const Home = () => {
                   <button className='rm-btn create-btn' type="submit">create / join room</button>
               </div>
               <div className="cr-jn-img">
-                <img src="../../public/sgn-lng-boy.webp" alt="boi" />
+                <img src={boy} alt="boy" height={250} width={400} className="boy-img"/>
               </div>
           </div>
           </div>
         </form>
+        <div className="footer">
+          <p>SilentSpeak - Is a WebRTC and Socket io A.I video chat app that enables you to skip communication barrier as it bridges the gap that an person who cannot speak faces with someone who does not understands Sign Language <br /> ©Team-SilentSpeak-2024</p>
+          <div className="f-icons">
+            <a href="https://github.com/Kr-Gagandeo1025/SilentSpeakFrontend"><GitHub/></a>
+            {/* <a href="#"><LinkedIn/></a>
+            <a href="#"><Twitter/></a> */}
+          </div>
+        </div>
     </>
   )
 }

@@ -16,7 +16,8 @@
 .main-section{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    border-bottom:1px solid black ;
 }
 .create-room {
     display: flex;
@@ -26,7 +27,6 @@
     width: 50%;
 }
 .create-room{
-    border-bottom: 1px solid black;
     padding-bottom: 30px;
 }
 .input-field{
@@ -54,4 +54,26 @@
 }
 .rm-btn:focus{
     border: 1px solid rgb(0, 162, 255);
+}
+.boy-img{
+    border-radius: 10px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(207, 207, 207);
+    padding:10px;
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+    p{
+        text-align: center;
+    }
+    .f-icons{
+        display: flex;
+        gap: 10px;
+        a{
+            color:black;
+        }
+    }
 }
