@@ -30,3 +30,5 @@ By default the backend server is running online and is usable in local host but 
 
 https://github.com/oppenheimer1601/SilentSpeakBackend
 
+,then got src/providers/socket.jsx and change socket url to http://localhost:8000
+
